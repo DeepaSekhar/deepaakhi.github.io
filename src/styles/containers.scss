@@ -1,0 +1,17 @@
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+  height: 97vh;
+  background-color: orange;
+  @include respond-to("small") {
+    height: 75%;
+  }
+  @include respond-to("medium") {
+    height: 83%;
+  }
+  @include respond-to("large") {
+    height: 60%;
+  }
+}

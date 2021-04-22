@@ -1,0 +1,78 @@
+@import "breakpoints";
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 8px;
+  @include respond-to("small") {
+  }
+
+  @include respond-to("large") {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+  }
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  width: 90%;
+  height: 275px;
+  background-color: white;
+  border: 4px solid white;
+
+  @include respond-to("small") {
+    height: 456px;
+    width: 79%;
+    height: 456px;
+  }
+  @include respond-to("large") {
+    width: 30%;
+  }
+}
+
+.img-container {
+  display: flex;
+  // align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  background-color: rgb(212, 212, 69);
+  border: 1px solid white;
+  @include respond-to("small") {
+    height: 60%;
+  }
+  @include respond-to("medium") {
+    height: 67%;
+  }
+}
+
+.spotify-img {
+  background-image: url(../assets/images/spotify.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: 1px solid white;
+}
+.Tracker-img {
+  background-image: url(../assets/images/ip-tracker.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: 1px solid white;
+}
+.weather-img {
+  background-image: url(../assets/images/weather.png);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  border: 1px solid white;
+}
