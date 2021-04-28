@@ -1,4 +1,12 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .introduction {
+  margin-top: 9px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,5 +21,8 @@
   }
   @include respond-to("large") {
     height: 60%;
+  }
+  @include respond-to("large") {
+    margin-top: 29px;
   }
 }

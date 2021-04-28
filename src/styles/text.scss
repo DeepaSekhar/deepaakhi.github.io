@@ -1,7 +1,6 @@
-@import "breakpoints";
-
 .greeting {
   color: black;
+  margin-bottom: 0px;
   @include respond-to("small") {
     font-size: 63px;
     margin-top: 40px;
@@ -9,36 +8,76 @@
   @include respond-to("medium") {
     font-size: 73px;
   }
+  @include respond-to("xlarge") {
+    width: 35%;
+    font-size: 53px;
+  }
 }
 h1 {
-  font-size: 36px;
+  font-size: 47px;
   text-align: center;
   margin-top: 20px;
   font-weight: normal;
   color: orange;
+  @include respond-to("medium") {
+    font-size: 45px;
+  }
+  @include respond-to("large") {
+    font-size: 48px;
+  }
+  @include respond-to("xlarge") {
+    font-size: 52px;
+  }
 }
 .intro-description {
   margin: 0;
   color: black;
   padding: 11px;
-  font-size: 27px;
+  font-size: 26px;
   font-weight: normal;
   text-align: center;
-  line-height: 40px;
+  line-height: 47px;
   @include respond-to("small") {
-    font-size: 31px;
-    line-height: 50px;
+    width: 75%;
+    font-size: 26px;
+    line-height: 40px;
   }
   @include respond-to("medium") {
-    font-size: 41px;
-    line-height: 81px;
+    font-size: 31px;
+    line-height: 45px;
   }
   @include respond-to("large") {
-    font-size: 33px;
-    line-height: 46px;
+    width: 50%;
+    margin-bottom: 18px;
+    font-size: 22px;
+    line-height: 31px;
   }
   @include respond-to("xlarge") {
-    font-size: 49px;
-    line-height: 81px;
+    width: 35%;
+    margin-bottom: 28px;
+    font-size: 23px;
+    line-height: 32px;
   }
+}
+h3 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 22px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+h4 {
+  margin: 0;
+}
+button {
+  margin: 2px;
+  padding: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgb(182, 197, 204);
+  border: none;
 }
