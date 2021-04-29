@@ -18,14 +18,19 @@
 }
 
 .thumbnail {
+  box-shadow: 3px 4px #888585;
+
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin-bottom: 20px;
   width: 90%;
-  height: 275px;
+  height: 255px;
   background-color: white;
-  border: 4px solid white;
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+
+  // border: 4px solid white;
 
   @include respond-to("small") {
     height: 456px;
@@ -44,7 +49,7 @@
   width: 100%;
   height: 50%;
   background-color: rgb(212, 212, 69);
-  border: 1px solid white;
+  // border: 1px solid white;
   @include respond-to("small") {
     height: 60%;
   }
@@ -52,7 +57,9 @@
     height: 67%;
   }
 }
-
+.thumbnail:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
 .spotify-img {
   background-image: url(../assets/images/spotify.png);
   overflow: hidden;

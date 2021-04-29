@@ -1,12 +1,15 @@
 .greeting {
   color: black;
   margin-bottom: 0px;
+  font-family: "Roboto Slab", serif;
+
+  font-weight: 400;
   @include respond-to("small") {
     font-size: 63px;
     margin-top: 40px;
   }
   @include respond-to("medium") {
-    font-size: 73px;
+    font-size: 50px;
   }
   @include respond-to("xlarge") {
     width: 35%;
@@ -30,11 +33,13 @@ h1 {
   }
 }
 .intro-description {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
   margin: 0;
   color: black;
   padding: 11px;
-  font-size: 26px;
-  font-weight: normal;
+  font-size: 24px;
+
   text-align: center;
   line-height: 47px;
   @include respond-to("small") {
@@ -47,20 +52,21 @@ h1 {
     line-height: 45px;
   }
   @include respond-to("large") {
-    width: 50%;
+    width: 55%;
     margin-bottom: 18px;
-    font-size: 22px;
-    line-height: 31px;
+    font-size: 18px;
+    line-height: 27px;
   }
   @include respond-to("xlarge") {
-    width: 35%;
+    width: 53%;
     margin-bottom: 28px;
-    font-size: 23px;
-    line-height: 32px;
+    font-size: 25px;
+    line-height: 36px;
   }
 }
 h3 {
-  font-size: 27px;
+  font-family: "Roboto Slab", serif;
+  font-size: 21px;
   margin-bottom: 8px;
 }
 
@@ -80,4 +86,9 @@ button {
   font-weight: bold;
   background-color: rgb(182, 197, 204);
   border: none;
+  border: 1px solid rgb(148, 145, 145);
+  cursor: alias;
+}
+button:hover {
+  color: grey;
 }
